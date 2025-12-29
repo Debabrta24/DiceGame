@@ -1,8 +1,6 @@
-import React, { useState } from "react";
 import styled from "styled-components";
-export const Numberelector = () => {
+export const Numberelector = ({selectedNumber,setelectedNumber}) => {
   const arryNumber = [1, 2, 3, 4, 5, 6];
-  const [selectedNumber, setelectedNumber] = useState();
   //   console.log(selectedNumber);
   return (
     <NumberSelectorContainer>

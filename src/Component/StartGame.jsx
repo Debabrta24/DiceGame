@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-export const StartGame = ({toggle}) => {
+export const StartGame = ({ toggle }) => {
   return (
     <Container>
       <div className="">
@@ -8,7 +8,7 @@ export const StartGame = ({toggle}) => {
       </div>
       <div className="content">
         <h1>DICE GAME</h1>
-        <Button onClick={toggle} >Play now</Button>
+        <Button onClick={toggle}>Play now</Button>
       </div>
     </Container>
   );
@@ -30,16 +30,6 @@ const Container = styled.div`
     }
   }
 
-
-
-
-
-
-
-
-
-
-
   /* for small screen laptop  */
 
   @media screen and (max-width: 1400px) {
@@ -48,23 +38,21 @@ const Container = styled.div`
     .image {
       height: 400px;
     }
-    
-  .content {
-    h1 {
-      font-size: 50px;
-      white-space: nowrap;
+
+    .content {
+      h1 {
+        font-size: 50px;
+        white-space: nowrap;
+      }
     }
-  }
 
-
-
-
-  /* for phone  */
-  @media screen and (max-width: 800px) {
-    display: flex;
-    flex-direction: column;
-    .image {
-      height: 400px;
+    /* for phone  */
+    @media screen and (max-width: 800px) {
+      display: flex;
+      flex-direction: column;
+      .image {
+        height: 400px;
+      }
     }
   }
 `;

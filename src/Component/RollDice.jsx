@@ -6,7 +6,7 @@ export const RollDice = ({ roleDice, currentDice }) => {
     return (
     <DiceContainer>
       <div className="dice" onClick={roleDice}>
-        <img src={`/dice_${currentDice}.png`} alt="Dice 1" />
+        <img src={`./dice_${currentDice}.png`} alt="Dice 1" />
       </div>
       <p>Click to Roll</p>
     </DiceContainer>
